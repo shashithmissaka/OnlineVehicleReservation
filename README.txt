@@ -1,82 +1,36 @@
-Colombo Car Rental - Online Vehicle Reservation System
+# Colombo Car Rental - Online Vehicle Reservation System
 
-User Guide
+Welcome to the official repository of **Colombo Car Rental**, a powerful and user-friendly Online Vehicle Reservation System designed for the popular cab service in Colombo City. This system aims to provide efficient management of customer orders, bookings, bills, car, and driver information, all while offering an intuitive experience for both customers and admins.
 
-1. Steps to Book a Car
-1. Login/Register:
-   - Users must log in to the system using their credentials or register if they are new.
+## 🚗 Features
 
-2. Search for Available Cars:
-   - Select the Start Location and Destination from the dropdown list.
-   - Click the Search button to view available cars.
+- **Customer Booking Management**: Allows users to book vehicles with ease and view booking details.
+- **Real-time Car Availability**: Displays available cars based on the start location, destination, and price.
+- **Payment Integration**: Secure payment gateway integration with support for **Stripe** and **PayPal**.
+- **Driver Management**: Admin can manually assign drivers to bookings and view driver details.
+- **Invoice Generation**: Automatic PDF invoice generation with company logo, signature, QR code, and detailed fare calculations.
+- **Admin Dashboard**: Admin can manage cars, bookings, users, and view payment records.
+- **Easy Registration & Login**: User-friendly registration and login system, with user-specific dashboards.
+  
+## 🛠️ Technologies Used
 
-3. Select a Car:
-   - Choose an available car from the search results.
-   - The system displays the car details, price, and assigned driver details.
+- **Java** (Spring Boot, JSP)
+- **MySQL** for database management
+- **HTML5, CSS3, JavaScript** for frontend
+- **Stripe** & **PayPal** for payment integration
+- **iTextPDF** for PDF invoice generation
+- **QR Code Generation**
+  
+## 📖 System Architecture
 
-4. Confirm Booking:
-   - Click the Book Now button.
-   - A confirmation page will display the booking details.
-   - Confirm the booking to proceed to payment.
+This system follows the **MVC (Model-View-Controller)** architecture to ensure separation of concerns and efficient management of code. It includes:
 
-5. Make Payment:
-   - Select a payment method (Stripe/PayPal).
-   - Complete the payment process.
-   - Upon successful payment, a receipt is generated, and a QR-coded invoice is provided.
+- **Model**: Represents the data and business logic.
+- **View**: The user interface and presentation layer.
+- **Controller**: Handles user requests and manages communication between the model and view.
 
-6. Receive Booking Confirmation:
-   - The user receives an email confirmation with the booking details and receipt.
+## 🧑‍💻 How to Set Up Locally
 
-2. Admin Guide
-
-Admin Login Credentials:
-- Username: admin
-- Password: admin
-
-Admin Features:
-1. Manage Cars:
-   - Add, update, or delete car details.
-
-2. Manage Bookings:
-   - View all customer bookings.
-   - Assign or change drivers.
-   - Update booking statuses.
-
-3. Manage Payments:
-   - View completed and pending payments.
-   - Generate invoices.
-
-4. Manage Users:
-   - View registered users.
-   - Delete or update user details.
-
-5. View Reports:
-   - Generate booking and revenue reports.
-
-Database Structure
-The system uses a MySQL database (cab). Key tables include:
-- users (Stores user details)
-- cars (Stores car availability and details)
-- bookings (Manages car reservations)
-- payments (Stores payment transactions)
-- drivers (Stores driver details)
-- distances (Stores predefined route distances)
-
-Installation Guide
-1. Set up the Database:
-   - Import the database file into MySQL.
-
-2. Configure the Project in Eclipse:
-   - Import the project into Eclipse.
-   - Ensure database credentials in DBConnection.java are correct.
-
-3. Run the Application:
-   - Deploy the project on Tomcat Server.
-   - Access the system via http://localhost:8080/ColomboCarRental/
-
-Future Enhancements
-- Implement Google Maps API for real-time distance calculation.
-- Add driver availability tracking.
-- Enable coupon-based discounts.
-
-
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/shashithmissaka/OnlineVehicleReservation.git
